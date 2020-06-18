@@ -10,3 +10,6 @@ GRANT SELECT ON crawl.* TO 'reader'@'localhost';
 
 GRANT SELECT ON indexes.* TO 'reader'@'localhost';
 
+Compile with:
+
+gcc -o query query.c -g -I/usr/include/mysql -lmysqlclient 
