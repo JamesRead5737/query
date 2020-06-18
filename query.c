@@ -33,7 +33,6 @@ int main (void)
 		if (!mysql_real_escape_string(con, escaped_token, token, strlen(token)))
 		{}
 		sql = (char *) realloc(sql, strlen(sql) + strlen("INNER JOIN `` ON crawl.crawled.id = .id ") + strlen(escaped_token) + strlen(escaped_token) + 1);
-		/*
 		strcat(sql, "INNER JOIN `");
 		strcat(sql, escaped_token);
 		strcat(sql, "` ON crawl.crawled.id = ");
@@ -41,9 +40,7 @@ int main (void)
 		strcat(sql, ".id ");
 		last = (char *) malloc(strlen(escaped_token) + 1);
 		strcpy(last, escaped_token);
-		*/
 	}
-	/*
 	while (token != NULL)
 	{
 		token = strtok(NULL, " ");
@@ -62,7 +59,6 @@ int main (void)
 			strcat(sql, ".id ");
 		}
 	}
-	*/
 	printf("Content-Type:text/html;charset=utf8\n\n");
 	printf("<html>\n");
 	printf("<head>\n");
