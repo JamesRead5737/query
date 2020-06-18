@@ -78,7 +78,19 @@ int main (void)
 	printf("<div><input name=\"q\" size=100%%></div>\n");
 	printf("<div><input type=\"submit\" value=\"Search\"></div>\n");
 	printf("</form>\n");
-	printf("%s\n", sql);
+	if (mysql_real_query(con, sql, (unsigned long)strlen(sql)))
+	{}
+	MYSQL_RES *result = mysql_use_result(con);
+	if(result == NULL)
+	{
+		mysql_close(con);
+	}
+	MYSQL_ROW row;
+	while ((row = mysql_fetch_row(result)))
+	{
+		printf("<a href=\"%s\">%s</a><br/>\n", row[0], row[0]);
+		printf("%s<br/><br/>\n", row[1]);
+	}
 	printf("</body>\n");
 	printf("</html>\n");
 }
