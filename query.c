@@ -18,10 +18,10 @@ int main (void)
 		exit(1);
 	}
 
-	/*
 	char *sql;
 	sql = (char *) malloc(strlen("SELECT url, title FROM crawl.crawled " + 1));
 	sql = "SELECT url, title FROM crawl.crawled ";
+	/*
 	input = getenv("QUERY_STRING");
 
 	char *token;
