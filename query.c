@@ -18,7 +18,6 @@ int main (void)
 		exit(1);
 	}
 
-	/*
 	char *sql;
 	sql = (char *) malloc(strlen("SELECT url, title FROM crawl.crawled " + 1));
 	sql = "SELECT url, title FROM crawl.crawled ";
@@ -59,7 +58,6 @@ int main (void)
 			strcat(sql, ".id ");
 		}
 	}
-	*/
 
 	printf("Content-Type:text/html;charset=utf8\n\n");
 	printf("<html>\n");
@@ -73,7 +71,7 @@ int main (void)
 	printf("<div><input name=\"q\" size=100%%></div>\n");
 	printf("<div><input type=\"submit\" value=\"Search\"></div>\n");
 	printf("</form>\n");
-	//printf("%s\n", sql);
+	printf("%s\n", sql);
 	printf("</body>\n");
 	printf("</html>\n");
 }
