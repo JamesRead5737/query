@@ -23,6 +23,7 @@ int main (void)
 	sql = "SELECT url, title FROM crawl.crawled ";
 	input = getenv("QUERY_STRING");
 
+	/*
 	char *token;
 	char *last;
 	token = strtok(input, " ");
@@ -40,7 +41,6 @@ int main (void)
 		last = (char *) malloc(strlen(escaped_token) + 1);
 		strcpy(last, escaped_token);
 	}
-	/*
 	while (token != NULL)
 	{
 		token = strtok(NULL, " ");
