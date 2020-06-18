@@ -80,7 +80,7 @@ int main (void)
 	printf("<div><input type=\"submit\" value=\"Search\"></div>\n");
 	printf("</form>\n");
 	printf("<div class=\"form\">\n");
-	printf("<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\n");
+	printf("<form class=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\n");
 	printf("<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" />\n");
 	printf("<input type=\"hidden\" name=\"hosted_button_id\" value=\"W9NAA722C66Z2\" />\n");
 	printf("<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif\" border=\"0\" name=\"submit\" title=\"PayPal - The safer, easier way to pay online!\" alt=\"Donate with PayPal button\" />\n");
