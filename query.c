@@ -6,6 +6,7 @@ int main (void)
 {
 	char *input;
 
+	/*
 	MYSQL *con = mysql_init(NULL);
 	if (con == NULL)
 	{
@@ -21,7 +22,6 @@ int main (void)
 	char *sql;
 	sql = (char *) malloc(strlen("SELECT url, title FROM crawl.crawled " + 1));
 	sql = "SELECT url, title FROM crawl.crawled ";
-	/*
 	input = getenv("QUERY_STRING");
 
 	char *token;
