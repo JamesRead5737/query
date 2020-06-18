@@ -76,7 +76,7 @@ int main (void)
 	printf("<h1>WoT ToT</h1>\n");
 	printf("<hr/>\n");
 	printf("<form action=\"http://www.wottot.com/cgi-bin/query\">\n");
-	printf("<div><input type=\"text\" name=\"q\"></div>\n");
+	printf("<div><input type=\"text\" name=\"q\" placeholder=\"Enter keywords here\"></div>\n");
 	printf("<div><input type=\"submit\" value=\"Search\"></div>\n");
 	printf("</form>\n");
 	printf("<div class=\"form\">\n");
