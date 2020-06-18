@@ -11,7 +11,7 @@ int main (void)
 	printf("</head>\n");
 	printf("<body>\n");
 	printf("<form action=\"http://www.wottot.com/cgi-bin/query\">i\n");
-	printf("<div><input name=\"n\" size=100\%></div>\n");
+	printf("<div><input name=\"n\" size=100%%></div>\n");
 	printf("<div><input type=\"submit\" value=\"Search\"></div>\n");
 	printf("</form>\n");
 	printf("</body>\n");
