@@ -102,10 +102,10 @@ int main (void)
 			printf("<a href=\"%s\">%s</a><br/>\n", row[0], row[0]);
 			printf("%s<br/><br/>\n", row[1]);
 		}
+		mysql_free_result(result);
 	}
 	printf("</body>\n");
 	printf("</html>\n");
-	mysql_free_result(result);
 	mysql_close(con);
 	free(sql);
 }
