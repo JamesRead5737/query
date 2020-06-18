@@ -64,6 +64,8 @@ int main (void)
 			strcat(sql, ".id ");
 		}
 	}
+	sql = (char *) realloc(sql, strlen(sql) + strlen("ORDER BY backlinks DESC") + 1);
+	strcat(sql, "ORDER BY backlinks DESC");
 	printf("Content-Type:text/html;charset=utf8\n\n");
 	printf("<html>\n");
 	printf("<head>\n");
