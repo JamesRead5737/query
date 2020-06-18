@@ -26,7 +26,12 @@ int main (void)
 
 	char *token;
 	char *last;
-	token = strtok(input, " ");
+	char *query;
+
+	query = strtok(input, "=");
+	query = strtok(NULL, "=");
+
+	token = strtok(query, "+");
 	if (token != NULL)
 	{
 		char escaped_token[(strlen(token)*2)+1];
@@ -43,7 +48,7 @@ int main (void)
 	}
 	while (token != NULL)
 	{
-		token = strtok(NULL, " ");
+		token = strtok(NULL, "+");
 		if (token != NULL)
 		{
 			char escaped_token[(strlen(token)*2)+1];
