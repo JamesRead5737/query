@@ -105,4 +105,7 @@ int main (void)
 	}
 	printf("</body>\n");
 	printf("</html>\n");
+	mysql_free_result(result);
+	mysql_close(con);
+	free(sql);
 }
