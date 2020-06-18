@@ -31,8 +31,9 @@ int main (void)
 		char escaped_token[(strlen(token)*2)+1];
 		if (!mysql_real_escape_string(con, escaped_token, token, strlen(token)))
 		{}
-		sql = (char *) realloc(sql, strlen(sql) + strlen("INNER JOIN `` ON crawl.crawled.id = .id ") + strlen(escaped_token) + strlen(escaped_token) + 1);
+		sql = (char *) realloc(sql, 1000);
 		/*
+		sql = (char *) realloc(sql, strlen(sql) + strlen("INNER JOIN `` ON crawl.crawled.id = .id ") + strlen(escaped_token) + strlen(escaped_token) + 1);
 		strcat(sql, "INNER JOIN `");
 		strcat(sql, escaped_token);
 		strcat(sql, "` ON crawl.crawled.id = ");
