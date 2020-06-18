@@ -21,7 +21,7 @@ int main (void)
 
 	char *sql;
 	sql = (char *) malloc(strlen("SELECT url, title FROM crawl.crawled " + 1));
-	sql = "SELECT url, title FROM crawl.crawled ";
+	strcpy(sql, "SELECT url, title FROM crawl.crawled ");
 	input = getenv("QUERY_STRING");
 
 	char *token;
@@ -32,8 +32,8 @@ int main (void)
 		char escaped_token[(strlen(token)*2)+1];
 		if (!mysql_real_escape_string(con, escaped_token, token, strlen(token)))
 		{}
-		/*
 		sql = (char *) realloc(sql, strlen(sql) + strlen("INNER JOIN `` ON crawl.crawled.id = .id ") + strlen(escaped_token) + strlen(escaped_token) + 1);
+		/*
 		strcat(sql, "INNER JOIN `");
 		strcat(sql, escaped_token);
 		strcat(sql, "` ON crawl.crawled.id = ");
