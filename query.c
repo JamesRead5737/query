@@ -6,13 +6,13 @@ int main (void)
 {
 	char *input;
 
-	/*
 	MYSQL *con = mysql_init(NULL);
 	if (con == NULL)
 	{
 		exit(1);
 	}
 
+	/*
 	if (mysql_real_connect(con, "localhost", "reader", "1q2w3e4r*", "indexes", 0, NULL, 0) == NULL)
 	{
 		mysql_close(con);
