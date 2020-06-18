@@ -91,11 +91,14 @@ int main (void)
 	{
 		mysql_close(con);
 	}
-	MYSQL_ROW row;
-	while ((row = mysql_fetch_row(result)))
+	else
 	{
-		printf("<a href=\"%s\">%s</a><br/>\n", row[0], row[0]);
-		printf("%s<br/><br/>\n", row[1]);
+		MYSQL_ROW row;
+		while ((row = mysql_fetch_row(result)))
+		{
+			printf("<a href=\"%s\">%s</a><br/>\n", row[0], row[0]);
+			printf("%s<br/><br/>\n", row[1]);
+		}
 	}
 	printf("</body>\n");
 	printf("</html>\n");
