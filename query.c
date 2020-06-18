@@ -4,7 +4,7 @@ int main (void)
 {
 	char *input;
 
-	printf("Content-Type:text/html;charset=utf8\n");
+	printf("Content-Type:text/html;charset=utf8\n\n");
 	printf("<html>\n");
 	printf("<head>\n");
 	printf("<title>WoT ToT</title>\n");
