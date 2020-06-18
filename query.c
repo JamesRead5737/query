@@ -12,13 +12,13 @@ int main (void)
 		exit(1);
 	}
 
-	/*
-	if (mysql_real_connect(con, "localhost", "reader", "1q2w3e4r*", "indexes", 0, NULL, 0) == NULL)
+	if (mysql_real_connect(con, "localhost", "reader", "1q2w3e4r", "indexes", 0, NULL, 0) == NULL)
 	{
 		mysql_close(con);
 		exit(1);
 	}
 
+	/*
 	char *sql;
 	sql = (char *) malloc(strlen("SELECT url, title FROM crawl.crawled " + 1));
 	sql = "SELECT url, title FROM crawl.crawled ";
