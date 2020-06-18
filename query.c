@@ -75,7 +75,7 @@ int main (void)
 	printf("<h1>WoT ToT</h1>\n");
 	printf("<hr/>\n");
 	printf("<form action=\"http://www.wottot.com/cgi-bin/query\">\n");
-	printf("<div><input name=\"q\" size=100%%></div>\n");
+	printf("<div><input name=\"q\" size=100%% height="100"></div>\n");
 	printf("<div><input type=\"submit\" value=\"Search\"></div>\n");
 	printf("</form>\n");
 	printf("<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\n");
