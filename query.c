@@ -73,7 +73,7 @@ int main (void)
 	printf("<div><input name=\"q\" size=100%%></div>\n");
 	printf("<div><input type=\"submit\" value=\"Search\"></div>\n");
 	printf("</form>\n");
-	printf("%s\n", sql);
+	//printf("%s\n", sql);
 	printf("</body>\n");
 	printf("</html>\n");
 }
