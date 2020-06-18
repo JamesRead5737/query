@@ -40,6 +40,7 @@ int main (void)
 		last = (char *) malloc(strlen(escaped_token) + 1);
 		strcpy(last, escaped_token);
 	}
+	/*
 	while (token != NULL)
 	{
 		token = strtok(NULL, " ");
@@ -58,7 +59,7 @@ int main (void)
 			strcat(sql, ".id ");
 		}
 	}
-
+	*/
 	printf("Content-Type:text/html;charset=utf8\n\n");
 	printf("<html>\n");
 	printf("<head>\n");
