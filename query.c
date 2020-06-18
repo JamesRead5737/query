@@ -70,6 +70,7 @@ int main (void)
 	printf("<html>\n");
 	printf("<head>\n");
 	printf("<title>WoT ToT</title>\n");
+	printf("<link rel=\"stylesheet\" href=\"http://www.wottot.com/styles.css\">\n");
 	printf("</head>\n");
 	printf("<body>\n");
 	printf("<h1>WoT ToT</h1>\n");
