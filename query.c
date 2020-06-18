@@ -6,7 +6,6 @@ int main (void)
 {
 	char *input;
 
-	/*
 	MYSQL *con = mysql_init(NULL);
 	if (con == NULL)
 	{
@@ -18,8 +17,8 @@ int main (void)
 		mysql_close(con);
 		exit(1);
 	}
-	*/
 
+	/*
 	char *sql;
 	sql = (char *) malloc(strlen("SELECT url, title FROM crawl.crawled " + 1));
 	sql = "SELECT url, title FROM crawl.crawled ";
@@ -60,6 +59,7 @@ int main (void)
 			strcat(sql, ".id ");
 		}
 	}
+	*/
 
 	printf("Content-Type:text/html;charset=utf8\n\n");
 	printf("<html>\n");
