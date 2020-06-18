@@ -73,6 +73,12 @@ int main (void)
 	printf("</head>\n");
 	printf("<body>\n");
 	printf("<h1>WoT ToT</h1>\n");
+	printf("<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\n");
+	printf("<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" />\n");
+	printf("<input type=\"hidden\" name=\"hosted_button_id\" value=\"W9NAA722C66Z2\" />\n");
+	printf("<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif\" border=\"0\" name=\"submit\" title=\"PayPal - The safer, easier way to pay online!\" alt=\"Donate with PayPal button\" />\n");
+	printf("<img alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_GB/i/scr/pixel.gif\" width=\"1\" height=\"1\" />\n");
+	printf("</form>\n");
 	printf("<hr/>\n");
 	printf("<form action=\"http://www.wottot.com/cgi-bin/query\">\n");
 	printf("<div><input name=\"q\" size=100%%></div>\n");
